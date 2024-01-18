@@ -5,10 +5,10 @@ import styles from './app.module.css'
 export default function Home() {
   return (
     <main>
-      <div className={ styles.siteLogo }>
+      <div style={{ width: '42dvw', textAlign: 'right' }}>
         <SiteLogo />
       </div>
-      <div className={ styles.titleDescription }>
+      <div style={{ width: '58dvw', marginLeft: 50 }}>
         <TitleDescription />
       </div>
     </main>

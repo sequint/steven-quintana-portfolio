@@ -1,9 +1,11 @@
 .siteLogo {
-  width: 50dvw;
+  width: 42dvw;
   text-align: right;
 }
 
 .siteTitle {
-  width: 50dvw;
+  width: 58dvw;
   margin-left: 50px;
+  font-size: 50px;
+  font-weight: 550;
 }

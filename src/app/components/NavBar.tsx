@@ -1,4 +1,5 @@
 import { pageTitles } from '@/data/pageTitles'
+import { fredoka } from '@/utils/fonts'
 import styles from './NavBar.module.css'
 
 export default function NavBar() {
@@ -6,7 +7,7 @@ export default function NavBar() {
   // Below description add list of education, projects, and experience
   // Each list item is an arrow dropdown that exposes it on hover
   return (
-    <nav className={ styles.navContainer }>
+    <nav className={ `${ fredoka.className } ${ styles.navContainer }` }>
       <div className={ styles.linksContainer }>
         <p className={ styles.links }>Projects</p>
         <p className={ styles.links }>About Me</p>

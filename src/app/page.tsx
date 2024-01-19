@@ -2,6 +2,7 @@ import SiteLogo from './components/SiteLogo'
 import TitleDescription from './components/TitleDescription'
 import IconLinks from './components/IconLinks'
 import { FiGithub } from 'react-icons/fi'
+import NavBar from './components/NavBar'
 
 export default function Home() {
   return (

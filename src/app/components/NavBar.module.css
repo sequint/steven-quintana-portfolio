@@ -1,0 +1,17 @@
+.navContainer {
+  width: 100dvw;
+  margin-top: 40px;
+}
+
+.linksContainer {
+  display: inline-flex;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 30px;
+  margin-left: 35dvw;
+  padding: 0px 20px;
+}
+
+.links {
+  padding: 0px 20px;
+}

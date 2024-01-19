@@ -1,4 +1,4 @@
-import logo from '../favicon.ico'
+import logo from '../favicon.png'
 import Image from 'next/image'
 
 export default function SiteLogo() {

@@ -14,8 +14,6 @@ export default function TitleDescription() {
         }}
       >
         <p>{ description.p1 }</p>
-        <p>{ description.p2 }</p>
-        <p>{ description.p3 }</p>
       </article>
     </div>
   )

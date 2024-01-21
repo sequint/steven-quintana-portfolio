@@ -1,0 +1,9 @@
+.imageContainer {
+  width: 100dvw;
+  text-align: right;
+  margin-top: 30px;
+}
+
+.image:hover {
+  cursor: pointer;
+}

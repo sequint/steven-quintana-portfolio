@@ -10,22 +10,23 @@ export default function BtmImageLinks() {
       <Image
         className={ styles.image }
         src={ skillsIcon }
-        width={ 200 }
-        height={ 200 }
+        width={ 225 }
+        height={ 225 }
         alt='HTML Element Brackets'
       />
       <Image
+        style={{ marginLeft: 50 }}
         className={ styles.image }
         src={ projectsIcon }
-        width={ 300 }
-        height={ 300 }
+        width={ 350 }
+        height={ 350 }
         alt='Cartoon Computer'
       />
       <Image
         className={ styles.image }
         src={ experienceIcon }
-        width={ 400 }
-        height={ 400 }
+        width={ 425 }
+        height={ 425 }
         alt='Cartoon Computer'
       />
     </div>

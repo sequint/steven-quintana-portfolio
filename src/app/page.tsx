@@ -1,9 +1,14 @@
+'use client'
+
+import { useState } from 'react'
 import SiteLogo from './components/SiteLogo'
 import TitleDescription from './components/TitleDescription'
 import IconLinks from './components/IconLinks'
 import BtmImageLinks from './components/BtmImageLinks'
 
 export default function Home() {
+  const [ middleContent, setMiddleContent ] = useState<string>('description')
+
   return (
     <main>
       <div style={{ display: 'inline-flex' }}>
@@ -11,7 +16,7 @@ export default function Home() {
           <SiteLogo />
         </div>
         <div style={{ width: '50dvw', marginLeft: 50 }}>
-          <TitleDescription />
+          <TitleDescription middleContent={ middleContent } />
         </div>
       </div>
       <div>
@@ -20,7 +25,7 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <BtmImageLinks />
+        <BtmImageLinks getClickedImage={(imgDesc: string) => setMiddleContent(imgDesc)} />
       </div>
     </main>
   )

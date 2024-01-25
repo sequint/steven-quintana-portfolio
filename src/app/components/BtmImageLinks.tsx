@@ -8,12 +8,17 @@ import experienceIcon from '../images/experienceIcon.png'
 import styles from './BtmImageLinks.module.css'
 import { useState } from 'react'
 
-type ImageLink = {
+interface ImageLinkProps {
+  getClickedImage: FunctionStringCallback
+}
+
+interface ImageLink {
   imgOpacity: number,
   titleDisplay: string
 }
 
-export default function BtmImageLinks() {
+export default function BtmImageLinks({ getClickedImage }: ImageLinkProps) {
+
   const [ skillsImg, setSkillsImg ] = useState<ImageLink>({
     imgOpacity: 1, titleDisplay: 'none'
   })
@@ -29,8 +34,9 @@ export default function BtmImageLinks() {
       <span
         style={{ display: skillsImg.titleDisplay }}
         className={ `${fredoka.className} ${styles.title} ${styles.skillsTitle}` }
-        onMouseEnter={() => setSkillsImg({ imgOpacity: .4, titleDisplay: 'inline' })}
-        onMouseLeave={() => setSkillsImg({ imgOpacity: 1, titleDisplay: 'none' })}
+        onMouseEnter={ () => setSkillsImg({ imgOpacity: .4, titleDisplay: 'inline' }) }
+        onMouseLeave={ () => setSkillsImg({ imgOpacity: 1, titleDisplay: 'none' }) }
+        onClick={ () => getClickedImage('skills') }
       >
         Skills
       </span>
@@ -43,12 +49,14 @@ export default function BtmImageLinks() {
         alt='HTML Element Brackets'
         onMouseEnter={() => setSkillsImg({ imgOpacity: .4, titleDisplay: 'inline' })}
         onMouseLeave={() => setSkillsImg({ imgOpacity: 1, titleDisplay: 'none' })}
+        onClick={ () => getClickedImage('skills') }
       />
       <span
         style={{ display: projectsImg.titleDisplay }}
         className={ `${fredoka.className} ${styles.title} ${styles.projectsTitle}` }
         onMouseEnter={() => setProjectsImg({ imgOpacity: .4, titleDisplay: 'inline' })}
         onMouseLeave={() => setProjectsImg({ imgOpacity: 1, titleDisplay: 'none' })}
+        onClick={ () => getClickedImage('projects') }
         >
           Project Highlights
       </span>
@@ -61,12 +69,14 @@ export default function BtmImageLinks() {
         alt='Computer'
         onMouseEnter={() => setProjectsImg({ imgOpacity: .4, titleDisplay: 'inline' })}
         onMouseLeave={() => setProjectsImg({ imgOpacity: 1, titleDisplay: 'none' })}
+        onClick={ () => getClickedImage('projects') }
       />
       <span
         style={{ display: experienceImg.titleDisplay }}
         className={ `${fredoka.className} ${styles.title} ${styles.experienceTitle}` }
         onMouseEnter={() => setExperienceImg({ imgOpacity: .4, titleDisplay: 'inline' })}
         onMouseLeave={() => setExperienceImg({ imgOpacity: 1, titleDisplay: 'none' })}
+        onClick={ () => getClickedImage('experience') }
         >
         Experience
       </span>
@@ -79,6 +89,7 @@ export default function BtmImageLinks() {
         alt='Office Building'
         onMouseEnter={() => setExperienceImg({ imgOpacity: .4, titleDisplay: 'inline' })}
         onMouseLeave={() => setExperienceImg({ imgOpacity: 1, titleDisplay: 'none' })}
+        onClick={ () => getClickedImage('experience') }
       />
     </div>
   )

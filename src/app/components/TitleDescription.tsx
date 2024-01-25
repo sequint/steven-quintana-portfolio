@@ -1,20 +1,19 @@
-import { description } from '@/data/description'
+import Description from './Description'
 import { fredoka } from '@/utils/fonts'
 import styles from './TitleDescription.module.css'
 
-export default function TitleDescription() {
+interface TDProps {
+  middleContent: string
+}
+
+export default function TitleDescription({ middleContent }: TDProps) {
   return (
     <div className={ styles.fadeIn }>
-      <h1 className={ `${fredoka.className} ${styles.title}`}>Steven Quintana</h1>
-      <article
-        style={{ 
-          fontFamily: 'Arial',
-          fontSize: 'large',
-          width: '30dvw'
-        }}
-      >
-        <p>{ description.p1 }</p>
-      </article>
+      <h1 className={ `${ fredoka.className } ${ styles.title }`}>Steven Quintana</h1>
+      { middleContent === 'description' && <Description /> }
+      { middleContent === 'skills' && <p>Skills</p> }
+      { middleContent === 'projects' && <p>Project Highlights</p> }
+      { middleContent === 'experience' && <p>Experience</p> }
     </div>
   )
 }

@@ -8,12 +8,14 @@ interface TDProps {
 
 export default function TitleDescription({ middleContent }: TDProps) {
   return (
-    <div className={ styles.fadeIn }>
+    <div>
       <h1 className={ `${ fredoka.className } ${ styles.title }`}>Steven Quintana</h1>
-      { middleContent === 'description' && <Description /> }
-      { middleContent === 'skills' && <p>Skills</p> }
-      { middleContent === 'projects' && <p>Project Highlights</p> }
-      { middleContent === 'experience' && <p>Experience</p> }
+      <div key={ middleContent } className={ styles.fadeIn }>
+        { middleContent === 'description' && <Description /> }
+        { middleContent === 'skills' && <p>Skills</p> }
+        { middleContent === 'projects' && <p>Project Highlights</p> }
+        { middleContent === 'experience' && <p>Experience</p> }
+      </div>
     </div>
   )
 }

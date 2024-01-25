@@ -8,7 +8,7 @@ interface TDProps {
 
 export default function TitleDescription({ middleContent }: TDProps) {
   return (
-    <div>
+    <div className={ styles.fadeIn }>
       <h1 className={ `${ fredoka.className } ${ styles.title }`}>Steven Quintana</h1>
       <div key={ middleContent } className={ styles.fadeIn }>
         { middleContent === 'description' && <Description /> }

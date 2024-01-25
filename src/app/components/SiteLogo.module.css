@@ -1,0 +1,7 @@
+.logo {
+  transform: rotate(349deg);
+}
+
+.logo:hover {
+  cursor: pointer;
+}

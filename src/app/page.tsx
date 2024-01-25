@@ -13,7 +13,7 @@ export default function Home() {
     <main>
       <div style={{ display: 'inline-flex' }}>
         <div style={{ width: '42dvw', textAlign: 'right' }}>
-          <SiteLogo />
+          <SiteLogo getClickedImage={(imgDesc: string) => setMiddleContent(imgDesc)} />
         </div>
         <div style={{ width: '50dvw', marginLeft: 50 }}>
           <TitleDescription middleContent={ middleContent } />

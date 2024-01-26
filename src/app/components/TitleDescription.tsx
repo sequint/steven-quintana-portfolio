@@ -1,4 +1,5 @@
 import Description from './Description'
+import ProjectHighlights from './middle/ProjectHighlights'
 import { fredoka } from '@/utils/fonts'
 import styles from './TitleDescription.module.css'
 
@@ -13,7 +14,7 @@ export default function TitleDescription({ middleContent }: TDProps) {
       <div key={ middleContent } className={ styles.fadeIn }>
         { middleContent === 'description' && <Description /> }
         { middleContent === 'skills' && <p>Skills</p> }
-        { middleContent === 'projects' && <p>Project Highlights</p> }
+        { middleContent === 'projects' && <ProjectHighlights /> }
         { middleContent === 'experience' && <p>Experience</p> }
       </div>
     </div>

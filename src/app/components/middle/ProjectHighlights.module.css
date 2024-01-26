@@ -1,0 +1,38 @@
+.projectBox {
+  border: solid grey 1px;
+  border-radius: 10px;
+  box-shadow: -1px 3px 5px 1px rgb(189, 189, 189);
+  padding: 10px;
+  width: 340px;
+  margin: 10px 0px 0px 5px;
+  color: black;
+}
+
+.projectBox:hover {
+  cursor: pointer;
+}
+
+.projectContents {
+  margin: 0px;
+}
+
+.title {
+  float: left;
+}
+
+.arrowIcon {
+  float: right;
+  transform: rotate(320deg);
+  margin-top: -7px;
+  margin-right: -5px;
+  -webkit-transform: rotate(320deg);
+  -moz-transform: rotate(320deg);
+  -ms-transform: rotate(320deg);
+  -o-transform: rotate(320deg);
+}
+
+.description {
+  font-size: 15px;
+  font-family: arial;
+  margin-top: 25px;
+}

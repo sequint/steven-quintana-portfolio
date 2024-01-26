@@ -1,6 +1,7 @@
 .navContainer {
   width: 100dvw;
   margin-top: 40px;
+  text-align: center;
 }
 
 .linksContainer {
@@ -9,7 +10,6 @@
   border: 1px solid grey;
   border-radius: 50px;
   box-shadow: 0px 1px 5px 1px rgb(189, 189, 189);
-  margin-left: 35dvw;
   padding: 0px 20px;
 }
 

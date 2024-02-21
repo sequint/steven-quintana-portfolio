@@ -1,5 +1,6 @@
 import { pageTitles } from '@/data/pageTitles'
 import { fredoka } from '@/utils/fonts'
+import Link from 'next/link'
 import styles from './NavBar.module.css'
 
 export default function NavBar() {
@@ -9,9 +10,9 @@ export default function NavBar() {
   return (
     <nav className={ `${ fredoka.className } ${ styles.navContainer }` }>
       <div className={ styles.linksContainer }>
-        <p className={ styles.links }>Projects</p>
-        <p className={ styles.links }>About Me</p>
-        <p className={ styles.links }>Resume</p>
+        <Link className={ styles.links } href='/projects'>Projects</Link>
+        <Link className={ styles.links } href='/about'>About Me</Link>
+        <Link className={ styles.links } href='/resume'>Resume</Link>
       </div>
     </nav>
   )

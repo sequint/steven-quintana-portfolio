@@ -2,7 +2,7 @@ import { fredoka } from '@/utils/fonts'
 import NavBar from './components/NavBar'
 import SiteLogo from './components/SiteLogo'
 import IconLinks from './components/IconLinks'
-import ProjectHighlights from './components/middle/ProjectHighlights'
+import ProjectHighlights from './components/ProjectHighlights'
 import Description from './components/Description'
 
 export default function Home() {

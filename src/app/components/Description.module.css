@@ -1,6 +1,10 @@
-.descriptionContent {
+.descriptionWrapper {
   font-family: 'Arial';
   font-size: large;
-  width: 20dvw;
+  width: 25dvw;
   margin-left: 5px;
+}
+
+.description {
+  margin: 10px 0px;
 }

@@ -4,7 +4,8 @@ import styles from './ProjectHighlights.module.css'
 
 export default function ProjectHighlights() {
   return (
-    <aside>
+    <aside className={ styles.fadeIn }>
+      <p className={ styles.highlightTitle }>Project Highlights</p>
       <Link
         style={{ textDecoration: 'none' }}
         href='https://github.com/sequint/Jofer'

@@ -6,6 +6,7 @@ import SiteLogo from './components/SiteLogo'
 import TitleDescription from './components/TitleDescription'
 import IconLinks from './components/IconLinks'
 import BtmImageLinks from './components/BtmImageLinks'
+import ProjectHighlights from './components/middle/ProjectHighlights'
 
 export default function Home() {
   const [ middleContent, setMiddleContent ] = useState<string>('description')
@@ -20,6 +21,7 @@ export default function Home() {
           </div>
           <div style={{ width: '50dvw', marginLeft: 50 }}>
             <TitleDescription middleContent={ middleContent } />
+            <ProjectHighlights />
           </div>
         </div>
         <div>
@@ -28,7 +30,7 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <BtmImageLinks getClickedImage={(imgDesc: string) => setMiddleContent(imgDesc)} />
+          
         </div>
       </main>
     </>

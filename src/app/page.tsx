@@ -1,27 +1,25 @@
-'use client'
-
-import { useState } from 'react'
+import { fredoka } from '@/utils/fonts'
 import NavBar from './components/NavBar'
 import SiteLogo from './components/SiteLogo'
-import TitleDescription from './components/TitleDescription'
 import IconLinks from './components/IconLinks'
-import BtmImageLinks from './components/BtmImageLinks'
 import ProjectHighlights from './components/middle/ProjectHighlights'
+import Description from './components/Description'
 
 export default function Home() {
-  const [ middleContent, setMiddleContent ] = useState<string>('description')
-
   return (
     <>
       <NavBar></NavBar>
       <main>
         <div style={{ display: 'inline-flex' }}>
           <div style={{ width: '42dvw', textAlign: 'right' }}>
-            <SiteLogo getClickedImage={(imgDesc: string) => setMiddleContent(imgDesc)} />
+            <SiteLogo />
           </div>
           <div style={{ width: '50dvw', marginLeft: 50 }}>
-            <TitleDescription middleContent={ middleContent } />
-            <ProjectHighlights />
+            <h1 className={ `${ fredoka.className } title`}>Steven Quintana</h1>
+            <div className='fadeIn'>
+              <Description />
+              <ProjectHighlights />
+            </div>
           </div>
         </div>
         <div>

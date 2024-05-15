@@ -4,7 +4,7 @@ import styles from './ProjectHighlights.module.css'
 
 export default function ProjectHighlights() {
   return (
-    <aside className={ styles.fadeIn }>
+    <aside>
       <p className={ styles.highlightTitle }>Project Highlights</p>
       <Link
         style={{ textDecoration: 'none' }}

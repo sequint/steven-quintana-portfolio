@@ -10,8 +10,8 @@ export default function Home() {
     <>
       <NavBar></NavBar>
       <main>
-        <div style={{ display: 'inline-flex' }}>
-          <div style={{ width: '42dvw', textAlign: 'right' }}>
+        <div style={{ display: 'inline-flex', marginTop: 50 }}>
+          <div style={{ width: '50dvw', textAlign: 'right' }}>
             <SiteLogo />
           </div>
           <div style={{ width: '50dvw', marginLeft: 50 }}>

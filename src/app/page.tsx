@@ -10,8 +10,15 @@ export default function Home() {
     <>
       <NavBar></NavBar>
       <main>
-        <div style={{ display: 'inline-flex', marginTop: 150 }}>
-          <div style={{ width: '50dvw', textAlign: 'right' }}>
+        <div style={{
+            display: 'inline-flex',
+            marginTop: 150,
+            height: 'calc(100vh - 150px)'
+          }}>
+          <div style={{
+              width: '50dvw',
+              textAlign: 'right'
+            }}>
             <SiteLogo />
           </div>
           <div style={{ width: '50dvw' }}>
@@ -24,6 +31,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div style={{
+            height: 800,
+            background: 'linear-gradient(to top, #fffff 95%, #fcfcfc 100%)'
+          }}></div>
         {/* <div>
           <div style={{ width: '42dvw', textAlign: 'right' }}>
             <IconLinks />

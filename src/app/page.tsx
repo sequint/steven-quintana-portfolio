@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <NavBar></NavBar>
       <main>
-        <div style={{
+        <div id='' style={{
             display: 'inline-flex',
             marginTop: 175,
             height: 'calc(100vh - 175px)',

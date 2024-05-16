@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function IconLinks() {
   return (
-    <div style={{ marginTop: -25 }}>
+    <div>
       <Link href='https://github.com/sequint' target='_blank'>
         <FiGithub
           size={35}

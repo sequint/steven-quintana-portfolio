@@ -1,0 +1,13 @@
+.footerContainer {
+  text-align: center;
+  background: darkgray;
+  padding: 25px 0px;
+}
+
+.copyRightContainer {
+  margin-top: 20px;
+}
+.copyRight {
+  color: grey;
+  padding-left: 10px;
+}

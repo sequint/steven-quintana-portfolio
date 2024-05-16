@@ -4,6 +4,7 @@ import SiteLogo from './components/SiteLogo'
 import ProjectHighlights from './components/ProjectHighlights'
 import Description from './components/Description'
 import AboutMe from './components/AboutMe'
+import Footer from './components/Footer'
 
 export default function Home() {
   return (
@@ -13,16 +14,17 @@ export default function Home() {
         <div style={{
             display: 'inline-flex',
             marginTop: 150,
-            height: 'calc(100vh - 150px)'
+            height: 'calc(100vh - 150px)',
+            width: '100%'
           }}>
           <div style={{
-              width: '50dvw',
+              width: '50%',
               textAlign: 'right'
             }}>
             <SiteLogo />
           </div>
-          <div style={{ width: '50dvw' }}>
-            <div style={{ marginLeft: 50 }}>
+          <div style={{ width: '50%' }}>
+            <div style={{ paddingLeft: 50 }}>
               <h1 className={ `${ fredoka.className } title`}>Steven Quintana</h1>
               <div className='fadeIn'>
                 <Description />
@@ -39,15 +41,10 @@ export default function Home() {
           }}>
             <AboutMe />
         </div>
-        {/* <div>
-          <div style={{ width: '42dvw', textAlign: 'right' }}>
-            <IconLinks />
-          </div>
-        </div> */}
-        <div>
-          
-        </div>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }

@@ -1,0 +1,17 @@
+.aboutContainer {
+  display: inline-flex;
+}
+
+.aboutDescContainer {
+  width: 50dvw;
+  text-align: center;
+}
+
+.aboutImgContainer {
+  width: 50dvw;
+}
+
+.headshot {
+  border-radius: 50%;
+  margin-left: 50px;
+}

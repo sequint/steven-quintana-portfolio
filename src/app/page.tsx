@@ -4,6 +4,7 @@ import SiteLogo from './components/SiteLogo'
 import IconLinks from './components/IconLinks'
 import ProjectHighlights from './components/ProjectHighlights'
 import Description from './components/Description'
+import AboutMe from './components/AboutMe'
 
 export default function Home() {
   return (
@@ -36,7 +37,9 @@ export default function Home() {
           style={{
             height: 800,
             background: 'linear-gradient(to top, #fffff 95%, #fcfcfc 100%)'
-          }}></div>
+          }}>
+            <AboutMe />
+        </div>
         {/* <div>
           <div style={{ width: '42dvw', textAlign: 'right' }}>
             <IconLinks />

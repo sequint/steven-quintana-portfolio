@@ -35,7 +35,7 @@ export default function Home() {
           id='aboutme'
           style={{
             background: 'linear-gradient(360deg, #ffffff 95%, #fcfcfc 100%)',
-            padding: '300px 0px'
+            padding: '0px 0px 250px 0px'
           }}>
             <AboutMe />
         </div>

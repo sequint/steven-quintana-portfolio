@@ -56,7 +56,7 @@
 
 /** Responsive Views **/
 
-/* Medium Screen */
-@media (max-width: 1500px) {
+/* Mobile View */
+@media (max-width: 600px) {
   .projectBox { margin: 20px auto; }
 }

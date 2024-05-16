@@ -36,3 +36,9 @@
   .aboutImgContainer { order: 1; width: 100%; text-align: center; }
   .textContainer { padding: 50px 100px; }
 }
+
+/* Mobile View */
+@media (max-width: 600px) {
+  .headshot { margin: 0px auto; }
+  .textContainer { padding: 30px; }
+}

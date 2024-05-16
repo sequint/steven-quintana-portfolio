@@ -39,3 +39,12 @@
 .logo:hover {
   cursor: pointer;
 }
+
+
+
+/** Responsive Views **/
+
+/* Mobile View */
+@media (max-width: 600px) {
+  .shineContainer { width: 300px; padding-right: 0px; }
+}

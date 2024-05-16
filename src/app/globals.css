@@ -59,3 +59,13 @@ body {
   .middleContent { height: 50dvh; margin-top: 30dvh; }
   .aboutMe { margin-top: 30dvh; }
 }
+
+/* Mobile View */
+@media (max-width: 600px) {
+  .navContainer { display: none; }
+  .middleContent { flex-direction: column; margin-top: 12dvh; }
+  .logoContainer { width: 100%; text-align: center; }
+  .descriptionContainer { width: 100%; text-align: center; }
+  .descriptionInnerContainer { padding-left: 0px; }
+  .aboutMe { background: none; padding: 100px 0px 50px 0px;}
+}

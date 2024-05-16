@@ -15,5 +15,5 @@
 
 /* Medium Screen */
 @media (max-width: 1500px) {
-  .descriptionWrapper { width: 35dvw; }
+  .descriptionWrapper { width: 85dvw; margin: 0px auto; }
 }

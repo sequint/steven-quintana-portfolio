@@ -8,8 +8,12 @@ export default function AboutMe() {
     <div className={ styles.aboutContainer }>
       <div className={ styles.aboutDescContainer }>
         <div className={ `${ fredoka.className } ${styles.textContainer }`}>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>
+            I am an MSCS Student and Software Engineer who develops beautiful, simple, and novel technologies.  I am passionate about building products that blend the worlds of technology and sustainability.
+          </p>
+          <p>
+            In my free time I love to work in my garden, try new food places with my wife, run on trails, go hiking, and surf.  I also love discovering new technologies and working on projects that blend my passions together.
+          </p>
         </div>
       </div>
       <div className={ styles.aboutImgContainer }>

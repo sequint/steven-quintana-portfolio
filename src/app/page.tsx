@@ -13,8 +13,8 @@ export default function Home() {
       <main>
         <div style={{
             display: 'inline-flex',
-            marginTop: 150,
-            height: 'calc(100vh - 150px)',
+            marginTop: 175,
+            height: 'calc(100vh - 175px)',
             width: '100%'
           }}>
           <div style={{
@@ -36,8 +36,9 @@ export default function Home() {
         <div
           id='aboutme'
           style={{
-            background: 'linear-gradient(360deg, #ffffff 95%, #fcfcfc 100%)',
-            padding: '0px 0px 250px 0px'
+            background: 'linear-gradient(177deg, #fafafa 80%, #ffffff 100%)',
+            padding: '100px 0px 250px 0px',
+            borderTopLeftRadius: '30%'
           }}>
             <AboutMe />
         </div>

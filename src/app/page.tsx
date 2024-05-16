@@ -22,11 +22,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div>
+        {/* <div>
           <div style={{ width: '42dvw', textAlign: 'right' }}>
             <IconLinks />
           </div>
-        </div>
+        </div> */}
         <div>
           
         </div>

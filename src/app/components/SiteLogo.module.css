@@ -1,6 +1,38 @@
+.shineContainer {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  text-align: right;
+}
+
+.shineContainer img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.shineContainer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, -1), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, -1));
+    animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
 .logo {
   transform: rotate(349deg);
-  margin-right: 50px;
 }
 
 .logo:hover {

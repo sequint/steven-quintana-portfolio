@@ -4,12 +4,14 @@ import styles from './SiteLogo.module.css'
 
 export default function SiteLogo() {
   return (
-    <Image
-      className={ styles.logo }
-      src={ logo }
-      width={ 300 }
-      height={ 300 }
-      alt="SQ Logo"
-    />
+    <div className={ styles.shineContainer }>
+      <Image
+        className={ styles.logo }
+        src={ logo }
+        width={ 400 }
+        height={ 400 }
+        alt="SQ Logo"
+      />
+    </div>
   )
 }

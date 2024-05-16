@@ -31,7 +31,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div style={{
+        <div
+          id='aboutme'
+          style={{
             height: 800,
             background: 'linear-gradient(to top, #fffff 95%, #fcfcfc 100%)'
           }}></div>

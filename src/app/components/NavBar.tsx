@@ -7,7 +7,7 @@ export default function NavBar() {
     <nav className={ `${ fredoka.className } ${ styles.navContainer }` }>
       <div className={ styles.linksContainer }>
         <Link className={ styles.links } href='/projects'>Projects</Link>
-        <Link className={ styles.links } href='/about'>About Me</Link>
+        <Link className={ styles.links } href='#aboutme'>About Me</Link>
         <Link className={ styles.links } href='/resume'>Resume</Link>
       </div>
     </nav>

@@ -12,7 +12,10 @@ export default function AboutMe() {
             I am an MSCS Student and Software Engineer who develops beautiful, simple, and novel technologies.  I am passionate about building products that blend the worlds of technology and sustainability.
           </p>
           <p>
-            In my free time I love to work in my garden, try new food places with my wife, run on trails, go hiking, and surf.  I also love discovering new technologies and working on projects that blend my passions together.
+            In my free time I love to work in my garden, try new food places with my wife, run on trails, go hiking, and surf.
+          </p>
+          <p>
+            I also love learning new technologies and collaborating on new ideas. So if you have one and need some help, reach out!
           </p>
         </div>
       </div>

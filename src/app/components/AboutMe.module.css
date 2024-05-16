@@ -1,9 +1,12 @@
 .aboutContainer {
   display: inline-flex;
+  height: 100%;
 }
 
 .aboutDescContainer {
   width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .textContainer {

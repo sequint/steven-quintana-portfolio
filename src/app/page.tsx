@@ -1,7 +1,6 @@
 import { fredoka } from '@/utils/fonts'
 import NavBar from './components/NavBar'
 import SiteLogo from './components/SiteLogo'
-import IconLinks from './components/IconLinks'
 import ProjectHighlights from './components/ProjectHighlights'
 import Description from './components/Description'
 import AboutMe from './components/AboutMe'
@@ -35,8 +34,8 @@ export default function Home() {
         <div
           id='aboutme'
           style={{
-            height: 800,
-            background: 'linear-gradient(to top, #fffff 95%, #fcfcfc 100%)'
+            background: 'linear-gradient(360deg, #ffffff 95%, #fcfcfc 100%)',
+            padding: '300px 0px'
           }}>
             <AboutMe />
         </div>

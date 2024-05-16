@@ -1,6 +1,5 @@
 'use client'
 
-import { fredoka } from '@/utils/fonts'
 import Link from 'next/link'
 import styles from './NavBar.module.css'
 
@@ -14,12 +13,10 @@ export default function NavBar() {
   }
 
   return (
-    <nav className={ `${ fredoka.className } ${ styles.navContainer }` }>
-      <div className={ styles.linksContainer }>
-        {/* <Link className={ styles.links } href='/projects'>Projects</Link> */}
-        <div className={ styles.links } onClick={() => scrollTo('aboutme')}>About Me</div>
-        <Link className={ styles.links } href='/resume'>Resume</Link>
-      </div>
-    </nav>
+    <div className={ styles.linksContainer }>
+      {/* <Link className={ styles.links } href='/projects'>Projects</Link> */}
+      <div className={ styles.links } onClick={() => scrollTo('aboutme')}>About Me</div>
+      <Link className={ styles.links } href='/resume'>Resume</Link>
+    </div>
   )
 }

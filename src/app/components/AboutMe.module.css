@@ -23,3 +23,16 @@
   margin-left: 100px;
   box-shadow: -2px 5px 10px 6px rgb(189, 189, 189);
 }
+
+
+
+
+/** Responsive Views **/
+
+/* Medium Screen */
+@media (max-width: 1500px) {
+  .aboutContainer { flex-direction: column; }
+  .aboutDescContainer { order: 2; width: 100%; }
+  .aboutImgContainer { order: 1; width: 100%; text-align: center; }
+  .textContainer { padding: 50px 100px; }
+}

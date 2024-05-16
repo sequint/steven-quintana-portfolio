@@ -3,6 +3,12 @@ body {
   padding: 0px;
 }
 
+.navContainer {
+  width: 100%;
+  margin-top: 40px;
+  text-align: center;
+}
+
 .middleContent {
   display: inline-flex;
   margin-top: 175px;
@@ -42,4 +48,14 @@ body {
   background: linear-gradient(177deg, #fafafa 80%, #ffffff 100%);
   padding: 100px 0px 250px 0px;
   border-top-left-radius: 30%;
+}
+
+
+
+/** Responsive Views **/
+
+/* Medium Screen */
+@media (max-width: 1500px) {
+  .middleContent { height: 50dvh; margin-top: 30dvh; }
+  .aboutMe { margin-top: 30dvh; }
 }

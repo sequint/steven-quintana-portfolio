@@ -9,7 +9,9 @@ import Footer from './components/Footer'
 export default function Home() {
   return (
     <>
-      <NavBar></NavBar>
+      <nav className={ `${ fredoka.className } navContainer` }>
+        <NavBar></NavBar>
+      </nav>
       <main>
         <div className='middleContent'>
           <div className='logoContainer'>

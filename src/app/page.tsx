@@ -11,20 +11,12 @@ export default function Home() {
     <>
       <NavBar></NavBar>
       <main>
-        <div id='' style={{
-            display: 'inline-flex',
-            marginTop: 175,
-            height: 'calc(100vh - 175px)',
-            width: '100%'
-          }}>
-          <div style={{
-              width: '50%',
-              textAlign: 'right'
-            }}>
+        <div className='middleContent'>
+          <div className='logoContainer'>
             <SiteLogo />
           </div>
-          <div style={{ width: '50%' }}>
-            <div style={{ paddingLeft: 50 }}>
+          <div className='descriptionContainer'>
+            <div className='descriptionInnerContainer'>
               <h1 className={ `${ fredoka.className } title`}>Steven Quintana</h1>
               <div className='fadeIn'>
                 <Description />
@@ -33,13 +25,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div
-          id='aboutme'
-          style={{
-            background: 'linear-gradient(177deg, #fafafa 80%, #ffffff 100%)',
-            padding: '100px 0px 250px 0px',
-            borderTopLeftRadius: '30%'
-          }}>
+        <div id='aboutme' className='aboutMe'>
             <AboutMe />
         </div>
       </main>

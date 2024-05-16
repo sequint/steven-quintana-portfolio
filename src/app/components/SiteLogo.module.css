@@ -3,6 +3,7 @@
   display: inline-block;
   width: 400px;
   text-align: right;
+  margin-right: 50px;
 }
 
 .shineContainer img {

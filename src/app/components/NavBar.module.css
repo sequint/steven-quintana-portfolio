@@ -24,6 +24,5 @@
 
 .links:hover {
   cursor: pointer;
-  /* Credit for below highlighter background svg effect: https://svgbox.net/ */
-  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=06D6A0);
+  color: rgba(0, 0, 0, 0.7);
 }
